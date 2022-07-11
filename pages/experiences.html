@@ -7,42 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../scss/styles.css">
     <title>Simon - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../images/web-developing.svg">
+
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__navbar">
-            <ul class="header__list">
-                <li><a href="../index.html"> Home </a></li>
-                <li><a href="profile.html"> Profile </a></li>
-                <li><a href="skills.html"> Skills </a></li>
-                <li><a href="experiences.html"> Experiences</a></li>
-                <li><a href="contact.html"> Contact </a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- ends header -->
 
-    <main id="experiences" class="vbox">
-        <h1 class="experiences__title">Experiences</h1>
-    </main>
-    <!-- ends main -->
+    <!-- starts container -->
+    <div class="container-grid">
 
-    <footer class="footer vbox">
-        <h4 class="footer__title">Social Media</h4>
-        <div class="footer__links hbox">
-            <a href="https://www.instagram.com/simongrosso/">
-                <img src="../images/instagram-circle.png" style="width: 30px; height: 30px" alt="logo Instagram">
-            </a>
-            <a href="https://twitter.com/SimonGrosso_">
-                <img src="../images/twitter-circle.png" style="width: 30px; height: 30px" alt="logo Twitter">
-            </a>
-            <a href="https://www.linkedin.com/in/simonpgrosso/">
-                <img src="../images/linkedin-circle.png" style="width: 30px; height: 30px" alt="logo Linkedin">
-            </a>
-        </div>
-    </footer>
-    <!-- ends footer -->
+        <!-- starts header -->
+        <header class="header" id="header">
+            <nav class="header__navbar">
+                <ul class="header__list">
+                    <li><a href="../index.html"> Home </a></li>
+                    <li><a href="profile.html"> Profile </a></li>
+                    <li><a href="skills.html"> Skills </a></li>
+                    <li><a href="experiences.html"> Experiences</a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ends header -->
+
+        <!-- starts main -->
+        <main id="experiences">
+            <h1 class="experiences__title">Experiences</h1>
+            <div class="experiences__container">
+                <div class="experience__card">
+                    <h2>Ministerio de Obras Públicas</h2>
+                </div>
+                <div class="experience__card">
+                    <h2>Ministerio de Finanzas</h2>
+                </div>
+                <div class="experience__card">
+                    <h2>Fiat Chrysler Automobile</h2>
+                </div>
+                <div class="experience__card">
+                    <h2>Llevalo!</h2>
+                </div>
+            </div>
+        </main>
+        <!-- ends main -->
+
+        <!-- starts footer -->
+        <footer class="footer" id="footer">
+            <h4 class="footer__title">Social Media</h4>
+            <div class="footer__links hbox">
+                <a href="https://www.instagram.com/simongrosso/">
+                    <img src="../images/instagram-circle.png" alt="logo Instagram">
+                </a>
+                <a href="https://twitter.com/SimonGrosso_">
+                    <img src="../images/twitter-circle.png" alt="logo Twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/simonpgrosso/">
+                    <img src="../images/linkedin-circle.png" alt="logo Linkedin">
+                </a>
+            </div>
+        </footer>
+        <!-- ends footer -->
+
+    </div>
+    <!-- ends container-->
+
 </body>
 
 </html>

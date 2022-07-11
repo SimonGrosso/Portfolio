@@ -7,57 +7,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../scss/styles.css">
     <title>Simon - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="../images/web-developing.svg">
+
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__navbar">
-            <ul class="header__list">
-                <li><a href="../index.html"> Home </a></li>
-                <li><a href="profile.html"> Profile </a></li>
-                <li><a href="skills.html"> Skills </a></li>
-                <li><a href="experiences.html"> Experiences</a></li>
-                <li><a href="contact.html"> Contact </a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- ends header -->
 
-    <main id="contact">
-        <h1 class="contact__title">Contact</h1>
-        <form class="contact__form vbox">
-            <label for="name">Name</label>
-            <input type="text" id="name">
-            <label for="email">Email</label>
-            <input type="email" id="email">
-            <label for="subject">Subject</label>
-            <input type="text" id="subject">
-            <label for="message">Message</label>
-            <textarea name="message" id="message" cols="30" rows="10"></textarea>
-            <button class="btnPrimary uppercase" type="submit">Send message!</button>
-        </form>
-        <iframe class="contact__map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.638773113008!2d-64.1824453850806!3d-31.42407708140163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a290f7b652b9%3A0x42359e9de86273a3!2sRondeau%20488%2C%20X5000AVJ%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1656274305436!5m2!1ses-419!2sar"
-            width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </main>
-    <!-- ends main -->
+    <!-- starts container -->
+    <div class="container">
 
-    <footer class="footer vbox">
-        <h4 class="footer__title">Social Media</h4>
-        <div class="footer__links hbox">
-            <a href="https://www.instagram.com/simongrosso/">
-                <img src="../images/instagram-circle.png" style="width: 30px; height: 30px" alt="logo Instagram">
-            </a>
-            <a href="https://twitter.com/SimonGrosso_">
-                <img src="../images/twitter-circle.png" style="width: 30px; height: 30px" alt="logo Twitter">
-            </a>
-            <a href="https://www.linkedin.com/in/simonpgrosso/">
-                <img src="../images/linkedin-circle.png" style="width: 30px; height: 30px" alt="logo Linkedin">
-            </a>
-        </div>
-    </footer>
-    <!-- ends footer -->
+        <!-- starts header -->
+        <header class="header">
+            <nav class="header__navbar">
+                <ul class="header__list">
+                    <li><a href="../index.html"> Home </a></li>
+                    <li><a href="profile.html"> Profile </a></li>
+                    <li><a href="skills.html"> Skills </a></li>
+                    <li><a href="experiences.html"> Experiences</a></li>
+                    <li><a href="contact.html"> Contact </a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- ends header -->
+
+        <!-- starts main -->
+        <main id="contact">
+            <h1 class="contact__title">Contact</h1>
+            <form class="contact__form">
+                <label for="name">Name</label>
+                <input type="text" id="name">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <button class="btnPrimary uppercase" type="submit">Send message!</button>
+                <iframe class="contact__map"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.638773113008!2d-64.1824453850806!3d-31.42407708140163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a290f7b652b9%3A0x42359e9de86273a3!2sRondeau%20488%2C%20X5000AVJ%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1656274305436!5m2!1ses-419!2sar"
+                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </form>
+        </main>
+        <!-- ends main -->
+
+        <!-- starts footer -->
+        <footer class="footer vbox">
+            <h4 class="footer__title">Social Media</h4>
+            <div class="footer__links hbox">
+                <a href="https://www.instagram.com/simongrosso/">
+                    <img src="../images/instagram-circle.png" alt="logo Instagram">
+                </a>
+                <a href="https://twitter.com/SimonGrosso_">
+                    <img src="../images/twitter-circle.png" alt="logo Twitter">
+                </a>
+                <a href="https://www.linkedin.com/in/simonpgrosso/">
+                    <img src="../images/linkedin-circle.png" alt="logo Linkedin">
+                </a>
+            </div>
+        </footer>
+        <!-- ends footer -->
+
+    </div>
+    <!-- ends container-->
+
 </body>
 
 </html>
