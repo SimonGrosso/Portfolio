@@ -9,33 +9,59 @@
     <title>Simon - Portfolio</title>
     <link rel="icon" type="image/x-icon" href="../images/web-developing.svg">
 
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../scss/styles.css">
 </head>
 
 <body>
+    <!-- starts header -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg bg-light sticky-top p-0">
+            <div class="container-fluid mx-2">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/web-developing.svg" alt="Logo de Simon Perez Grosso">
+                </a>
+                <h4 class="navbar-brand-title m-0">Simón Pérez Grosso</h4>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="skills.html">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experiences.html">Experiences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ends header -->
 
-    <!-- starts container -->
-    <div class="container">
-
-        <!-- starts header -->
-        <header class="header">
-            <nav class="header__navbar">
-                <ul class="header__list">
-                    <li><a href="../index.html"> Home </a></li>
-                    <li><a href="profile.html"> Profile </a></li>
-                    <li><a href="skills.html"> Skills </a></li>
-                    <li><a href="experiences.html"> Experiences</a></li>
-                    <li><a href="contact.html"> Contact </a></li>
-                </ul>
-            </nav>
-        </header>
-        <!-- ends header -->
-
-        <!-- starts main -->
-        <main id="profile">
+    <!-- starts main -->
+    <main id="profile">
+        <div class="container-fluid">
             <h1 class="profile__title">Profile</h1>
-            <div class="hbox">
-                <div class="profile__aboutMe">
-                    <h3>About Me</h3>
+            <div class="row d-flex justify-content-center p-4">
+                <div class="col-sm-12 col-md-6 col-lg-4 ps-5 profile__aboutMe">
+                    <h3 class="fw-bold">About Me</h3>
                     <p>Soy un estudiante responsable y perseverante. Me gusta trabajar en equipo, la tecnología, y la
                         cooperación.
                         Soy una persona curiosa a la que le encanta aprender cosas nuevas constantemente.
@@ -46,9 +72,20 @@
                         como en el académico.
                     </p>
                 </div>
-                <div class="profile__photo">
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column align-items-center justify-content-center">
                     <img class="profile__image" src="../images/profile-photo.png" alt="">
-                    <div class="profile__links hbox padd10">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex flex-column profile__details">
+                    <h3 class="fw-bold">Details</h3>
+                    <ul class="p-0 m-0">
+                        <li class="fw-bold">Name:</li>
+                        <p>Simón Pérez Grosso</p>
+                        <li class="fw-bold">Age:</li>
+                        <p>25</p>
+                        <li class="fw-bold">Location:</li>
+                        <p>Córdoba, Argentina</p>
+                    </ul>
+                    <div class="d-flex align-items-lg-start profile__links">
                         <a href="https://www.instagram.com/simongrosso/">
                             <img src="../images/instagram-circle.png" alt="logo Instagram">
                         </a>
@@ -60,40 +97,33 @@
                         </a>
                     </div>
                 </div>
-                <div class="profile__details">
-                    <h3>Details</h3>
-                    <ul>
-                        <li>Name:</li>
-                        <p>Simón Pérez Grosso</p>
-                        <li>Age:</li>
-                        <p>25</p>
-                        <li>Location:</li>
-                        <p>Córdoba, Argentina</p>
-                    </ul>
-                </div>
             </div>
-        </main>
-        <!-- ends main -->
+        </div>
+    </main>
+    <!-- ends main -->
 
-        <!-- starts footer -->
-        <footer class="footer vbox">
-            <h4 class="footer__title">Social Media</h4>
-            <div class="footer__links hbox">
-                <a href="https://www.instagram.com/simongrosso/">
-                    <img src="../images/instagram-circle.png" alt="logo Instagram">
-                </a>
-                <a href="https://twitter.com/SimonGrosso_">
-                    <img src="../images/twitter-circle.png" alt="logo Twitter">
-                </a>
-                <a href="https://www.linkedin.com/in/simonpgrosso/">
-                    <img src="../images/linkedin-circle.png" alt="logo Linkedin">
-                </a>
-            </div>
-        </footer>
-        <!-- ends footer -->
+    <!-- starts footer -->
+    <footer class="footer vbox">
+        <h4 class="footer__title">Social Media</h4>
+        <div class="footer__links hbox">
+            <a href="https://www.instagram.com/simongrosso/">
+                <img src="../images/instagram-circle.png" alt="logo Instagram">
+            </a>
+            <a href="https://twitter.com/SimonGrosso_">
+                <img src="../images/twitter-circle.png" alt="logo Twitter">
+            </a>
+            <a href="https://www.linkedin.com/in/simonpgrosso/">
+                <img src="../images/linkedin-circle.png" alt="logo Linkedin">
+            </a>
+        </div>
+    </footer>
+    <!-- ends footer -->
 
-    </div>
-    <!-- ends container-->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
