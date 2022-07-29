@@ -1,0 +1,33 @@
+#contact {
+    background: linear-gradient(to right,
+            #ffff 0%,
+            #ffff 60%,
+            #222589 60%,
+            #222589 100%);
+}
+
+.contact__container {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.contact__title {
+    text-align: left;
+    color: #62ECC1;
+    padding: 20px;
+}
+
+.contact__map {
+    border: none;
+    border-radius: 5px;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-Start;
+}
+
+.contact__form label {
+    color: #FFFFFF;
+}

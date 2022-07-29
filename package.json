@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "sass": "^1.54.0"
+  },
+  "name": "root",
+  "description": "Here is my Portfolio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/main.scss  css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SimonGrosso/Portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SimonGrosso/Portfolio/issues"
+  },
+  "homepage": "https://github.com/SimonGrosso/Portfolio#readme"
+}

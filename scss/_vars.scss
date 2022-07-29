@@ -1,0 +1,100 @@
+//global vars
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.btnPrimary {
+    font-size: 15px;
+    width: 200px;
+    height: 51px;
+    border-width: 0px;
+    color: #222589;
+    border-color: #62ECC1;
+    font-weight: bold;
+    border-radius: 42px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0);
+    background-color: #62ECC1;
+}
+
+.btnPrimary:hover {
+    background: #FFFFFF;
+    cursor: pointer;
+}
+
+.btnSecondary {
+    font-size: 15px;
+    width: 200px;
+    height: 51px;
+    border: 2px solid #62ECC1;
+    color: #62ECC1;
+    font-weight: bold;
+    border-radius: 42px;
+    background-color: transparent;
+}
+
+.btnSecondary:hover {
+    background: #FFFFFF;
+    cursor: pointer;
+    color: #222589;
+}
+
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.vbox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.mtop10 {
+    margin-top: 10px;
+}
+
+.mtop20 {
+    margin-top: 20px;
+}
+
+.mtop30 {
+    margin-top: 30px;
+}
+
+.padd20 {
+    padding: 20px;
+}
+
+.padd10 {
+    padding: 10px;
+}
