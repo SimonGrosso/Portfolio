@@ -1,0 +1,15 @@
+@mixin d-flex($justify, $align, $dire) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $dire;
+}
+
+.vbox {
+    @include d-flex(center, center, column);
+}
+
+
+.hbox {
+    @include d-flex(center, center, row)
+}
