@@ -1,12 +1,12 @@
 {
   "dependencies": {
+    "animate.css": "^4.1.1",
     "sass": "^1.54.0"
   },
   "name": "root",
   "description": "Here is my Portfolio",
   "version": "1.0.0",
   "main": "index.js",
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
