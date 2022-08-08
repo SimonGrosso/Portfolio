@@ -19,8 +19,19 @@ ul {
 h1 {
     font-size: 50px;
     font-weight: 700;
-
 }
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "nav"
+        "main"
+        "footer";
+    grid-template-rows: 60px auto 130px;
+    height: 100vh;
+}
+
+
 
 .btnPrimary {
     font-size: 15px;

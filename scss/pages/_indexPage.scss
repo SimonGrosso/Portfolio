@@ -26,12 +26,17 @@
             color: #62ECC1;
             animation: rubberBand;
             animation-duration: 2s;
+
+            &:hover {
+                animation: rubberBand;
+                animation-duration: 2s;
+            }
+
         }
 
         .home__text {
             color: #FFFFFF;
             font-weight: 400;
-            font-size: 20px;
         }
 
         .home__buttons {

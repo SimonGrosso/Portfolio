@@ -1,26 +1,24 @@
-#footer {
+footer {
     grid-area: footer;
-}
-
-.footer {
+    @include d-flex(center, center, column);
     padding: 20px;
     background-color: #333333;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
-.footer__title {
-    color: #FFFFFF;
-}
+    .footer__title {
+        color: #FFFFFF;
+    }
 
-.footer__links a {
-    padding: 10px 5px 5px 5px;
-}
+    .footer__links {
+        @include d-flex(center, center, row);
 
-.footer__links a img {
-    width: 30px;
-    height: 30px;
-    //filter: invert();
+        a {
+            padding: 10px 5px 5px 5px;
+
+            img {
+                width: 30px;
+                height: 30px;
+                filter: invert(1);
+            }
+        }
+    }
 }
