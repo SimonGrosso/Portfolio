@@ -28,41 +28,6 @@ h1 {
   height: 100vh;
 }
 
-.btnPrimary {
-  font-size: 15px;
-  width: 200px;
-  height: 51px;
-  border-width: 0px;
-  color: #222589;
-  border-color: #62ECC1;
-  font-weight: bold;
-  border-radius: 42px;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0);
-  background-color: #62ECC1;
-}
-
-.btnPrimary:hover {
-  background: #FFFFFF;
-  cursor: pointer;
-}
-
-.btnSecondary {
-  font-size: 15px;
-  width: 200px;
-  height: 51px;
-  border: 2px solid #62ECC1;
-  color: #62ECC1;
-  font-weight: bold;
-  border-radius: 42px;
-  background-color: transparent;
-}
-
-.btnSecondary:hover {
-  background: #FFFFFF;
-  cursor: pointer;
-  color: #222589;
-}
-
 .uppercase {
   text-transform: uppercase;
 }
@@ -81,6 +46,37 @@ h1 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
+}
+
+.btn, .btn-bg-transparent, .btn-bg-green {
+  font-size: 15px;
+  width: 200px;
+  height: 51px;
+  font-weight: bold;
+  border-radius: 42px;
+}
+
+.btn-bg-green {
+  border-width: 0px;
+  color: #222589;
+  border-color: #62ECC1;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0);
+  background-color: #62ECC1;
+}
+.btn-bg-green:hover {
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.btn-bg-transparent {
+  border: 2px solid #62ECC1;
+  color: #62ECC1;
+  background-color: transparent;
+}
+.btn-bg-transparent:hover {
+  background-color: #FFFFFF;
+  cursor: pointer;
+  color: #222589;
 }
 
 #home {
@@ -203,7 +199,7 @@ footer .footer__links a img {
   grid-area: main;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
@@ -222,7 +218,7 @@ footer .footer__links a img {
   text-align: center;
   color: #222589;
   padding: 1.25rem 0;
-  margin: 0;
+  margin-bottom: 30px;
 }
 #profile .profile__title:hover {
   animation: pulse;
@@ -374,7 +370,7 @@ footer .footer__links a img {
   align-items: center;
   flex-direction: row;
   column-gap: 30px;
-  background: linear-gradient(to right, white 0%, white 60%, #222589 60%, #222589 100%);
+  background: linear-gradient(to right, #FFFFFF 0%, #FFFFFF 60%, #222589 60%, #222589 100%);
 }
 #contact .contact__title {
   text-align: left;

@@ -3,14 +3,14 @@
     @include d-flex(center, center, row);
     column-gap: 30px;
     background: linear-gradient(to right,
-            #ffff 0%,
-            #ffff 60%,
-            #222589 60%,
-            #222589 100%);
+            map-get($map: $palet, $key: 'white') 0%,
+            map-get($map: $palet, $key: 'white') 60%,
+            map-get($map: $palet, $key: 'blue') 60%,
+            map-get($map: $palet, $key: 'blue') 100%);
 
     .contact__title {
         text-align: left;
-        color: #62ECC1;
+        color: map-get($map: $palet, $key: 'aquaGreen');
         padding-bottom: 1rem;
 
         &:hover {

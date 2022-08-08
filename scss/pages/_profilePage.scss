@@ -1,7 +1,7 @@
 #profile {
-    background-color: #62ECC1;
+    background-color: map-get($map: $palet, $key: 'aquaGreen');
     grid-area: main;
-    @include d-flex(space-around, center, column);
+    @include d-flex(center, center, column);
 
     p {
         line-height: 1.7;
@@ -19,9 +19,9 @@
 
     .profile__title {
         text-align: center;
-        color: #222589;
+        color: map-get($map: $palet, $key: 'blue');
         padding: 1.25rem 0;
-        margin: 0;
+        margin-bottom: 30px;
 
         &:hover {
             animation: pulse;

@@ -1,11 +1,12 @@
 #skills {
-    background-color: #FFFFFF;
+    background-color: map-get($map: $palet, $key: 'white');
     grid-area: main;
     @include d-flex(space-around, strech, column);
 
     .skills__title {
         text-align: center;
-        color: #222589;
+        color: map-get($map: $palet, $key: 'blue');
+        ;
 
         &:hover {
             animation: pulse;
@@ -39,7 +40,7 @@
                 width: 120px;
                 height: 120px;
                 border-radius: 60px;
-                background-color: #62ECC1;
+                background-color: map-get($map: $palet, $key: 'aquaGreen');
 
                 img {
                     width: 80px;

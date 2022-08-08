@@ -23,7 +23,7 @@
             text-align: center;
             font-weight: 900;
             font-size: 80px;
-            color: #62ECC1;
+            color: map-get($map: $palet, $key: 'aquaGreen');
             animation: rubberBand;
             animation-duration: 2s;
 
@@ -35,7 +35,8 @@
         }
 
         .home__text {
-            color: #FFFFFF;
+            color: map-get($map: $palet, $key: 'white');
+            ;
             font-weight: 400;
         }
 

@@ -31,43 +31,6 @@ h1 {
     height: 100vh;
 }
 
-
-
-.btnPrimary {
-    font-size: 15px;
-    width: 200px;
-    height: 51px;
-    border-width: 0px;
-    color: #222589;
-    border-color: #62ECC1;
-    font-weight: bold;
-    border-radius: 42px;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0);
-    background-color: #62ECC1;
-}
-
-.btnPrimary:hover {
-    background: #FFFFFF;
-    cursor: pointer;
-}
-
-.btnSecondary {
-    font-size: 15px;
-    width: 200px;
-    height: 51px;
-    border: 2px solid #62ECC1;
-    color: #62ECC1;
-    font-weight: bold;
-    border-radius: 42px;
-    background-color: transparent;
-}
-
-.btnSecondary:hover {
-    background: #FFFFFF;
-    cursor: pointer;
-    color: #222589;
-}
-
 .uppercase {
     text-transform: uppercase;
 }
@@ -91,22 +54,45 @@ h1 {
     @include d-flex(center, center, row)
 }
 
-@mixin medias($breakpoint) {
-    @if $breakpoint ==mobile {
-        @media (max-width: 320px) {
-            @content;
-        }
-    }
+$palet: (
+    'aquaGreen': #62ECC1,
+    'blue': #222589,
+    'dark': #333333,
+    'white': #FFFFFF,
+    'transparent':transparent
+);
 
-    @if $breakpoint ==tablet {
-        @media (min-width: 600px) {
-            @content;
-        }
-    }
+.btn {
+    font-size: 15px;
+    width: 200px;
+    height: 51px;
+    font-weight: bold;
+    border-radius: 42px;
+}
 
-    @if $breakpoint ==desktop {
-        @media (min-width: 1200px) {
-            @content;
-        }
+.btn-bg-green {
+    @extend .btn;
+    border-width: 0px;
+    color: map-get($map: $palet, $key: 'blue');
+    border-color: map-get($map: $palet, $key: 'aquaGreen');
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0);
+    background-color: map-get($map: $palet, $key: 'aquaGreen');
+
+    &:hover {
+        background: map-get($map: $palet, $key: 'white');
+        cursor: pointer;
+    }
+}
+
+.btn-bg-transparent {
+    @extend .btn;
+    border: 2px solid map-get($map: $palet, $key: 'aquaGreen');
+    color: map-get($map: $palet, $key: 'aquaGreen');
+    background-color: map-get($map: $palet, $key: 'transparent');
+
+    &:hover {
+        background-color: map-get($map: $palet, $key: 'white');
+        cursor: pointer;
+        color: map-get($map: $palet, $key: 'blue');
     }
 }

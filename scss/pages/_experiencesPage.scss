@@ -1,12 +1,12 @@
 #experiences {
-    background-color: #222589;
+    background-color: map-get($map: $palet, $key: 'blue');
     grid-area: main;
     @include d-flex(space-around, center, column);
 
     padding: 2rem 0;
 
     .experiences__title {
-        color: #FFFFFF;
+        color: map-get($map: $palet, $key: 'white');
         text-align: center;
         padding: 1.25rem 0;
         margin: 0;
