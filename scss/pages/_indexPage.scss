@@ -1,7 +1,4 @@
 // home page
-#home {
-    height: 100vh;
-}
 
 .home__content {
     @include d-flex(center, center, column);
@@ -48,12 +45,15 @@
     }
 
     @media (min-width:0px) and (max-width:450px) {
+        #home {
+            height: 100vh;
+        }
+
         .home__buttons {
             @include d-flex(center, center, column);
-            flex-wrap: wrap;
 
             a {
-                margin: 10px;
+                margin-top: 10px;
             }
         }
     }

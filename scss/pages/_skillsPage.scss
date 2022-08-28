@@ -18,17 +18,19 @@
         @include d-flex(space-around, center, row);
         margin: 1rem;
 
+
+        @media (max-width:576px) {
+            .skill__card {
+                width: 50% !important;
+            }
+        }
+
         .skill__card {
             @include d-flex(center, center, column);
             padding: 1rem;
             cursor: pointer;
             width: 30%;
 
-            @media (max-width:576px) {
-                .skill__card {
-                    width: 50%;
-                }
-            }
 
             .skill__title {
                 padding: 1.25rem 0;
